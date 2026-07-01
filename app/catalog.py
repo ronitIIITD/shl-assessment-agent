@@ -71,7 +71,7 @@ def load_catalog(path: str | Path | None = None) -> list[Assessment]:
             continue
         if not assessment.name or not assessment.url:
             continue
-        if "/solutions/products/product-catalog/view/" not in assessment.url:
+        if "/products/product-catalog/view/" not in assessment.url:
             continue
         if assessment.url in seen_urls:
             continue
